@@ -1,5 +1,5 @@
-CREATE DATABASE angulartest
-use angulartest
+CREATE DATABASE angulartest;
+use angulartest;
 
 CREATE TABLE game
 (
@@ -12,4 +12,5 @@ CREATE TABLE game
     image VARCHAR
     (200),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)
+);
+
