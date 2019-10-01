@@ -24,9 +24,9 @@ class Server {
     //Routes function
     routes() {
         this.app.use(express_1.default.json());
+        this.app.use(cors_1.default());
         this.app.use(index_routes_1.default);
         this.app.use('/api/games', games_routes_1.default);
-        this.app.use(cors_1.default());
         this.app.use(express_1.default.urlencoded({ extended: false }));
     }
     //Start Function

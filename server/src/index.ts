@@ -25,9 +25,9 @@ class Server {
     //Routes function
     routes(): void {
         this.app.use(express.json());
+        this.app.use(cors());
         this.app.use(indexRoutes);
         this.app.use('/api/games', gamesRoutes);
-        this.app.use(cors());
         this.app.use(express.urlencoded({ extended: false }));
     }
 
